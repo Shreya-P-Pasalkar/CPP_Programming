@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : CheckEvenOdd
+//  Description :   Used to check if number is even or odd
+//  Input :         int
+//  Output :        int
+//  Date :          28/04/26
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int CheckEvenOdd(int iNo)
+{
+    int iRem = 0;
+    
+    iRem = iNo % 2;
+
+    return iRem;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iNo = 0;
+    int iRet = 0;
+
+    cout<<"Enter Number : ";
+    cin>>iNo;
+
+    iRet = CheckEvenOdd(iNo);
+
+    if(iRet == 0)
+    {
+        cout<<iNo<<" is Even number\n";
+    }
+    else 
+    {
+        cout<<iNo<<" is Odd number\n";
+    }
+
+    return 0;
+}
