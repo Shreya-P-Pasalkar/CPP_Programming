@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : DisplayNumbers
+//  Description :   Used to display numbers in reverse order
+//  Pattern :       5   4   3   2   1
+//  Input :         Integer
+//  Output :        void
+//  Date :          06/10/26
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void DisplayReverse(int iNo)
+{
+    // Loop Counter
+    int iCnt = 0;
+
+    // Iteration : for loop
+    for(iCnt = iNo; iCnt >= 0; iCnt--)
+    {
+        cout<<iCnt<<"\t";
+    }
+
+    cout<<"\n";
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    // Dynammic Input
+    int iNo = 0;
+
+    cout<<"Enter the number : \n";
+    cin>>iNo;
+
+    DisplayReverse(iNo);
+
+    return 0;
+}
+
