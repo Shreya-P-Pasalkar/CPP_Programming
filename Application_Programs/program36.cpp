@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : DisplayEven
+//  Description :   Used to display even numbers
+//  Pattern :       2   4   6   8   10
+//  Input :         Integer
+//  Output :        void
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void DisplayEven(int iNo)
+{
+    // Loop Counter
+    int iCnt = 0;
+
+    // Iteration : for loop
+    for(iCnt = 2; iCnt <= iNo; iCnt += 2)
+    {
+        if(iCnt%2 == 0)
+        {
+            cout<<iCnt<<"\t";
+        }
+    }
+
+    cout<<"\n";
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    // Dynammic Input
+    int iNo = 0;
+
+    cout<<"Enter the number : \n";
+    cin>>iNo;
+
+    DisplayEven(iNo);
+
+    return 0;
+}
+
