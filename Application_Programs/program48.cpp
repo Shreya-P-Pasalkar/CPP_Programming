@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : CheckDivisibility
+//  Description :   Used to check if number is divisible by 2
+//  Input :         Integer
+//  Output :        Boolean
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+bool CheckDivisibility(int iNo)
+{
+    if(iNo % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iNo = 0;
+    bool bRet = false;
+
+    iNo = 42;
+    bRet = CheckDivisibility(iNo);
+
+    if(bRet == true)
+    {
+        cout<<iNo<<" is divisible by 2\n";
+    }
+    else
+    {
+        cout<<iNo<<" is not divisible by 2\n";
+    }
+    
+    return 0;
+}
+
