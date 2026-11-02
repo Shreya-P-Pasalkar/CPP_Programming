@@ -13,6 +13,7 @@ bool CheckPrime(int iNo)
     int iCnt = 0;
     int iFreq = 0;  // Used to count factors
     
+    // Time Complexity : O(N)
     for(iCnt = 2; iCnt < iNo; iCnt++)
     {
         if(iNo % iCnt == 0)
