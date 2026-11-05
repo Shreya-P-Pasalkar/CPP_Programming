@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : CheckPerfect
+//  Description :   Used to check perfect
+//  Input :         Integer
+//  Output :        Boolean
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+bool CheckPerfect(int iNo)
+{
+    int iCnt = 0;
+    int iSum = 0;
+
+    // Reverse loop
+    for(iCnt = (iNo - 1); iCnt >= 1; iCnt--)
+    {
+        if(iNo % iCnt == 0)
+        {
+            iSum += iCnt;
+        }
+    }
+
+    return iNo == iSum;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iNo = 0;
+    bool bRet = false;
+
+    cout<<"Enter Number : \n";
+    cin>>iNo;
+
+    // Negative value updater
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    bRet = CheckPerfect(iNo);
+
+    if(bRet == true)
+    {
+        cout<<iNo<<" is perfect number\n";
+    }
+    else
+    {
+        cout<<iNo<<" is not perfect number\n";
+    }
+
+    return 0;
+}
+
