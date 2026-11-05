@@ -29,6 +29,8 @@ int DigitSum(int iNo)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
+    // Without Updater
+
     int iNo = 0;
     int iRet = 0;
 
@@ -37,11 +39,6 @@ int main()
 
     cout<<"\n-------------------------------------------------------------\n";
     cout<<"Original Number is : "<<iNo<<"\n";
-
-    if(iNo < 0)
-    {
-        iNo = -iNo;
-    }
 
     iRet = DigitSum(iNo);
 
