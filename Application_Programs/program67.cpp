@@ -14,7 +14,8 @@ bool CheckPerfect(int iNo)
     int iSum = 0;
 
     // Forward loop with 2 conditions
-    for(iCnt = 1; iCnt < iNo && (iNo % iCnt == 0); iCnt++) // IMP - Failed condition
+    // Time complexity : O(N/2)
+    for(iCnt = 1; iCnt <= (iNo/2) && (iSum < iNo); iCnt++)
     {
         iSum += iCnt;
     }
