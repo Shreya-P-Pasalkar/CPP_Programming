@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name : Factorial
+//  Description :   Used to calculate factorial of a number
+//  Input :         Integer
+//  Output :        Integer
+//  Author :        Shreya Pramod Pasalkar
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int Factorial(int iNo)
+{
+    int iCnt = 0;
+    int iFact = 0;
+
+    iFact = 1;
+
+    for(iCnt = iNo; iCnt > 0; iCnt--)
+    {
+        iFact = iFact * iCnt;
+    }
+
+    return iFact;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Entry-point Function
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iNo = 0;
+    int iRet = 0;
+
+    cout<<"Enter Number : ";
+    cin>>iNo;
+
+    // Negative Value Updator
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    iRet = Factorial(iNo);
+
+    cout<<"Factorial of "<<iNo<<" is : "<<iRet<<"\n";
+    
+    return 0;
+}
+
